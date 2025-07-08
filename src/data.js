@@ -136,7 +136,7 @@ export const technologies = [
 
   { name: "Kotlin", icon: Kotlin, color: "#7F52FF", doc: "https://kotlinlang.org/docs/home.html" },
 
-  { name: "Python", icon: Kotlin, color: "#3776AB", doc: "https://docs.python.org/3/" },
+  { name: "Python", icon: Python, color: "#3776AB", doc: "https://docs.python.org/3/" },
   { name: "TensorFlow", icon: TensorFlow, color: "#FF6F00", doc: "https://www.tensorflow.org/learn" },
   { name: "Keras", icon: Keras, color: "#D00000", doc: "https://keras.io/getting_started/" },
   { name: "Streamlit", icon: Streamlit, color: "#FF4B4B", doc: "https://docs.streamlit.io/" },

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from "/assets/CN logo.png"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,9 @@ export default function Navbar() {
     <div className={`navbar fixed z-50 w-full top-0 left-0 py-5 transition-colors duration-300 ${scrolled ? 'bg-white/40 backdrop-blur-sm' : 'bg-white'} border-b-1 border-t-1 border-orange-950`}>
       <div className="container mx-auto px-4 md:px-10">
         {/* Mobile Header */}
-        <div className="flex justify-between items-center md:hidden">
-          <h1 className="text-2xl font-Niconne">cnginn</h1>
+        <div className="flex justify-between items-center md:hidden w-full px-2">
+          {/* <h1 className="text-2xl font-Niconne">cnginn</h1> */}
+          <img src={logo} alt="" className='w-8' />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-orange-950 focus:outline-none"
@@ -36,7 +38,8 @@ export default function Navbar() {
         {/* Desktop Layout*/}
         <div className="hidden md:flex justify-between items-center">
           <div className="flex-1">
-            <h1 className="text-3xl font-Niconne hover:text-orange-500"><a href="#">cnginn</a></h1>
+            {/* <h1 className="text-3xl font-Niconne hover:text-orange-500"><a href="#">cnginn</a></h1> */}
+            <img src={logo} alt="" className='w-10' />
           </div>
 
           <div className="flex-1 flex justify-center">
@@ -44,6 +47,7 @@ export default function Navbar() {
               <li><a href="#Hero" className="hover:text-orange-500 transition">Home</a></li>
               <li><a href="#Project" className="hover:text-orange-500 transition">Project</a></li>
               <li><a href="#Experience" className="hover:text-orange-500 transition">Experience</a></li>
+              <li><a href="#TechStack" className="hover:text-orange-500 transition">Skills</a></li>
             </ul>
           </div>
 
@@ -78,6 +82,7 @@ export default function Navbar() {
               <li><a href="#Hero" onClick={() => setIsOpen(false)} className="block py-2 hover:text-orange-500 transition text-lg">Home</a></li>
               <li><a href="#Project" onClick={() => setIsOpen(false)} className="block py-2 hover:text-orange-500 transition text-lg">Project</a></li>
               <li><a href="#Experience" onClick={() => setIsOpen(false)} className="block py-2 hover:text-orange-500 transition text-lg">Experience</a></li>
+              <li><a href="#TechStack" onClick={() => setIsOpen(false)} className="block py-2 hover:text-orange-500 transition text-lg">Skills</a></li>
             </ul>
             <div className="flex gap-6 pt-2">
               <a href="https://www.linkedin.com/in/christian-nathaniel-3071b0368/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition">
