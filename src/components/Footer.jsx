@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Social media icons */}
           <div className="flex items-center gap-4">
             <a 
-              href="https://www.instagram.com/cnginn._" 
+              href="https://www.instagram.com/cnpngin._/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-neutral-300 hover:text-amber-500 transition-colors duration-300"

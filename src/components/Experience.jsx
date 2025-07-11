@@ -25,6 +25,16 @@ const ExperienceItem = ({ experience, index, activeIndex, setActiveIndex }) => {
           transition: { duration: 0.3 }
         }}
       >
+        {experience.icon && (
+          <div className="absolute right-6 top-6 w-10 h-10 flex items-center justify-center">
+            <img 
+              src={experience.icon} 
+              alt={experience.company} 
+              className="w-full h-full object-contain"
+            />
+          </div>
+        )}
+        
         <h3 className="text-lg font-bold text-gray-900">{experience.role}</h3>
         <div className="flex items-center gap-2 mt-1">
           <span className="text-orange-500 font-medium">{experience.company}</span>

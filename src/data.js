@@ -1,94 +1,119 @@
 // Project
-import Project1 from "../public/assets/proyek/Nutrimentum.png"
+import Nutrimentum from "../public/assets/proyek/Nutrimentum.png"
+import WisebitesMbl from "../public/assets/proyek/WiseBites_Mobile.png"
+import Wisebites from "../public/assets/proyek/WiseBites.png"
+import Piaijeii from "../public/assets/proyek/Piaijeii.png"
+import Notes from "../public/assets/proyek/Notes.png"
+import Cinaflix from "../public/assets/proyek/cinaflix.jpg"
 
 export const projects = [
   {
     id: 1,
     title: "Nutrimentum",
-    img: Project1,
-    stack: ["React", "Tailwind", "Framer Motion"],
-    category: "FrontEnd & ML",
-    year: "2024",
-    link: "https://github.com/ChristianNathanielP"
+    img: Nutrimentum,
+    stack: ["Python", "ScikitLearn", "TensorFlow", "Keras"],
+    category: "Machine Learning",
+    year: "2025",
+    link: "https://github.com/ChristianNathanielP/nutrimentum-streamlit"
   },
   {
     id: 2,
-    title: "Nutrimentum",
-    img: Project1,
-    stack: ["React", "Tailwind", "Framer Motion"],
-    category: "FrontEnd & ML",
+    title: "WiseBites Mobile",
+    img: WisebitesMbl,
+    stack: ["Kotlin", "Firebase", "Gradle"],
+    category: "UI/UX, Mobile Developer",
     year: "2024",
     link: "https://github.com/ChristianNathanielP"
   },
   {
     id: 3,
-    title: "Nutrimentum",
-    img: Project1,
-    stack: ["React", "Tailwind", "Framer Motion"],
-    category: "FrontEnd & ML",
+    title: "WiseBites",
+    img: Wisebites,
+    stack: ["Laravel", "Tailwind", "JavaScript", "PostgreSQL"],
+    category: "Fullstack Developer",
     year: "2024",
     link: "https://github.com/ChristianNathanielP"
   },
   {
     id: 4,
-    title: "Nutrimentum",
-    img: Project1,
-    stack: ["React", "Tailwind", "Framer Motion"],
-    category: "FrontEnd & ML",
+    title: "Piaijeii 2.0",
+    img: Piaijeii,
+    stack: ["Laravel", "Tailwind", "JavaScript", "SQLite"],
+    category: "Fullstack Developer",
     year: "2024",
-    link: "https://github.com/ChristianNathanielP"
+    link: "https://github.com/ChristianNathanielP/Piaijeii_2.0"
   },
   {
     id: 5,
-    title: "Nutrimentum",
-    img: Project1,
-    stack: ["React", "Tailwind", "Framer Motion"],
-    category: "FrontEnd & ML",
+    title: "Notes_Laravel",
+    img: Notes,
+    stack: ["Laravel", "Tailwind", "Vite", "SQLite"],
+    category: "Fullstack Developer",
     year: "2024",
-    link: "https://github.com/ChristianNathanielP"
+    link: "https://github.com/ChristianNathanielP/Notes_Laravel"
   },
   {
     id: 6,
-    title: "Nutrimentum",
-    img: Project1,
-    stack: ["React", "Tailwind", "Framer Motion"],
+    title: "CinaFlix 2.0",
+    img: Cinaflix,
+    stack: ["PHP", "CSS", "JavaScript", "MySQL"],
     category: "FrontEnd & ML",
     year: "2024",
-    link: "https://github.com/ChristianNathanielP"
+    link: "https://github.com/ChristianNathanielP/Cina_Flix_2.0"
   },
 ];
 
 
+
+
+import USU from "../public/assets/experience/USU.png"
+import IKLC from "../public/assets/experience/IKLC.png"
+import RumahDev from "../public/assets/experience/RumahDev.jpeg"
+import DBS from "../public/assets/experience/dbs.jpeg"
+import Telkomsel from "../public/assets/experience/Telkomsel.png"
+
 // Experience
 export const experiences = [
   {
+    year: "2022 - 2026 (expected)",
+    icon: USU,
+    role: "Computer Science Student",
+    company: "Universitas Sumatera Utara",
+    description: "A 6th-semester Computer Science student at Universitas Sumatera Utara, with strong academic performance and a passion for technology and software development.",
+    tags: ["CSStudent", "ProblemSolving", "Programming", "SoftwareDevelopment", "AI"]
+  },
+  {
+    year: "2025",
+    role: "Machine Learning Cohort",
+    icon: DBS,
+    company: "Coding Camp by DBS Foundation",
+    description: "Selected as one of the participants in an intensive training program focused on machine learning. Gained practical knowledge through hands-on projects, mentorship, and collaborative learning. The program emphasized solving real-world problems using data-driven approaches.",
+    tags: ["Coding Camp", "Machine Learning", "DBS Foundation", "Dicoding"]
+  },
+  {
     year: "2024 - Present",
     role: "Laboratorium Asistant",
+    icon: IKLC,
     company: "IKLC USU",
-    description: "Leading design team for enterprise clients, creating design systems and improving product usability.",
-    tags: ["Pascal", "C++", "Web Development", "Object Oriented Programming", "Data Mining"]
+    description: "Assisted over 100 students across multiple lab courses by supporting their learning in programming and web development. Helped create an engaging and effective learning environment through clear communication and guidance.",
+    tags: ["LabAssistant", "IKLC", "TeachingAssistant", "Student Mentor", "Programming Lab"]
   },
   {
-    year: "2022 - Present",
-    role: "Student",
-    company: "Universitas Sumatera Utara",
-    description: "Designed mobile and web applications with focus on accessibility and micro-interactions.",
-    tags: ["Algorithm"]
+    year: "2024 - 2025",
+    role: "Web Development Mentor - SMK Bina Media Extracurricular Program",
+    icon: RumahDev,
+    company: "RumahDev-Tech",
+    description: "Guided vocational high school students at SMK Bina Media through an extracurricular program focused on web development. Helped them create simple website projects in teams, while building their confidence, collaboration, and real-world problem-solving skills.",
+    tags: ["Extracurricular Program", "StudentMentor", "Project Based Learning"]
   },
   {
-    year: "2025 - Present",
-    role: "Junior Web Developer",
-    company: "Otak Kanan",
-    description: "Created marketing materials and assisted in website redesign projects for various clients.",
-    tags: ["Fullstack", "ReactJs", "Laravel"]
+    year: "2024",
+    role: "Intern",
+    icon: Telkomsel,
+    company: "Telkomsel Medan",
+    description: "Supported backend development in a professional environment, learning how large-scale web systems work. Helped improve internal tools to make data work more efficiently and worked with the data team to support clearer and more useful data visuals.",
+    tags: ["Internship Experience", "Laravel", "PowerBI"]
   },
-  {
-    year: "2025 - Present",
-    role: "FrontEnd Developer",
-    company: "Suitmedia",
-    description: "Learned fundamentals of user-centered design and contributed to real client projects.",
-    tags: ["Web Design", "ReactJs", "Vercel"]
-  }
 ];
 
 import HTML from "../public/assets/tools/html5.svg"
