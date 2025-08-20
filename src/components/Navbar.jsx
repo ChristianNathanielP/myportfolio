@@ -5,6 +5,15 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const handleClick = (id) => (e) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.pageYOffset - 80; 
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
         setScrolled(window.scrollY > 10);
@@ -44,10 +53,10 @@ export default function Navbar() {
 
           <div className="flex-1 flex justify-center">
             <ul className="flex gap-10">
-              <li><a href="#Hero" className="hover:text-orange-500 transition">Home</a></li>
-              <li><a href="#Project" className="hover:text-orange-500 transition">Project</a></li>
-              <li><a href="#Experience" className="hover:text-orange-500 transition">Experience</a></li>
-              <li><a href="#TechStack" className="hover:text-orange-500 transition">Skills</a></li>
+              <li><a href="#Hero" onClick={handleClick("Hero")} className="hover:text-orange-500 transition">Home</a></li>
+              <li><a href="#Project" onClick={handleClick("Project")} className="hover:text-orange-500 transition">Project</a></li>
+              <li><a href="#Experience" onClick={handleClick("Experience")} className="hover:text-orange-500 transition">Experience</a></li>
+              <li><a href="#TechStack" onClick={handleClick("TechStack")} className="hover:text-orange-500 transition">Skills</a></li>
             </ul>
           </div>
 
