@@ -8,6 +8,8 @@ import Projects from './components/Project.jsx'
 import Experience from './components/Experience.jsx'
 import TechStack from './components/TechStack.jsx'
 import Footer from './components/Footer.jsx'
+import { Analytics } from '@vercel/analytics/react';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +20,7 @@ createRoot(document.getElementById('root')).render(
       <Experience />
       <TechStack />
       <Footer />
+      {import.meta.env.PROD && <Analytics />}
     </div>
   </StrictMode>,
 )
